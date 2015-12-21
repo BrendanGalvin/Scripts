@@ -1,6 +1,8 @@
-#This is a simple perl script to list -all- possible combinations of letters, for a guessing game David and I played. It does not list the same combination twice.
+#This is a simple perl script to list -all- possible combinations of letters, for a guessing game my friend and I played. It does not list the same combination twice.
 
-@letters = ("I", "E", "D", "R", "L");
+chomp($input = <STDIN>);
+@letters = split("", $input);
+
 
 %combinations = ();
 
