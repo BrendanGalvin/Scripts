@@ -1,4 +1,5 @@
 #This is a simple perl script to list -all- possible combinations of letters, for a guessing game my friend and I played. It does not list the same combination twice.
+#This could probably made into a recursive function instead of an iterative one...
 
 chomp($input = <STDIN>);
 @letters = split("", $input);
