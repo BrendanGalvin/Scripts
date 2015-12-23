@@ -2,7 +2,7 @@
 
 
 while(1){
-print"How many buildings do you want to build?\n";
+print"\nHow many buildings do you want to build?\n";
 chomp($number = <STDIN>);
 
 if($number =~ /[^\d.]/){

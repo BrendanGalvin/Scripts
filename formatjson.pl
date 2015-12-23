@@ -1,4 +1,4 @@
-# For a Facebook interview, I was once asked to format JSON in the language of my choice, and this was roughly
+# For a Facebook interview, I was once asked to manually format JSON in the language of my choice, and this was roughly
 # The result.
 
 sub FormatJSON {
