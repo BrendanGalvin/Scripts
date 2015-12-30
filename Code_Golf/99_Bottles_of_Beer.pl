@@ -1,9 +1,8 @@
-#http://codegolf.stackexchange.com/questions/64198/99-bottles-of-beer
+# http://codegolf.stackexchange.com/questions/64198/99-bottles-of-beer
+# Run with the -p argument.
+# This iteration of it is from the community wiki on Codegolf. It's pretty neat.
 
-$b=" bottles of beer";
-$B=" bottle of beer";
-$w=" on the wall";
-for($i=99;$i>1;$i--){
-print"$i$b$w, $i$b.\nTake one down and pass it around, ".($i-1)."$b$w.\n\n";
-}
-print"1$B$w, 1$B.\nGo to the store and buy some more, 99$b$w.";
+@c=(@b=(++$n,bottle.'s'x@-,of,beer),on,the,wall),s//Take one down and pass it around, @c.
+
+@c, @b.
+/,until/99\D+/;say$'."Go to the store and buy some more, $&"
